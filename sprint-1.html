@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>ENCRIPTADOR Y DESENCRIPTADOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="funciones.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="titulo">
+        <h1>ENCRIPTADOR Y DESENCRIPTADOR</h1>
+      </div>
+      
+      <div class="form-group">
+        <div class="texto">
+          <label for="message">Texto:</label>
+          <textarea type="text" id="message" placeholder="Ingrese el texto"></textarea> 
+          
+          <button onclick="encrypt()">Encriptar</button>
+          <button onclick="decrypt()">Desencriptar</button>
+          <button onclick="pasteText()">Pegar</button>
+        </div>
+          
+        <div class="resultado">
+          <label for="result">Resultado:</label>
+          <textarea type="text" id="result" readonly></textarea>
+          <button onclick="copyToClipboard('result')">Copiar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Rodapie:</p>
+      <p>Nombre: Raul Alejandro Carmona Cuellar</p>
+      <p>Celular: 3148946568</p>
+      <p>Ciudad: Manizales (Caldas)</p>
+    </footer>
+  </body>
+</html>
